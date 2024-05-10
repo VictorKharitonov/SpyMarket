@@ -1,0 +1,29 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 1rem;
+  
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.cardBody__text {
+  max-width: 450px;
+
+  @media (max-width: 1280px) {
+    max-width: 300px;
+  }
+  
+  @media (max-width: 940px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 585px) {
+    max-width: 250px;
+  }
+
+  @media (max-width: 425px) {
+    max-width: 150px;
+  }
+}
